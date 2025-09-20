@@ -310,7 +310,7 @@ const Projects = () => {
       name: "TenantFlow – Apartment Maintenance Facilitation Application",
       description: "A centralized web-based application designed to streamline the reporting, tracking, resolution, and payment of maintenance-related issues in residential apartment complexes in Sri Lanka. Features include AI-powered incident categorization, secure payment processing, real-time notifications, and comprehensive reporting system. (Ongoing Project)",
       techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "OpenAI GPT API", "PayHere", "Socket.io"],
-      image: "🏢",
+      image: "/apartment.png",
       contribution: "Full-stack development with focus on user interface, payment integration, and real-time communication features"
     }
   ];
@@ -325,7 +325,15 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className={`rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 ${isDark ? 'bg-gray-900 shadow-xl' : 'bg-gray-50 shadow-lg'}`}>
               <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <span className="text-6xl">{project.image}</span>
+                {project.image.startsWith('/') ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-6xl">{project.image}</span>
+                )}
               </div>
               <div className="p-6">
                 <h3 className={`text-2xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>{project.name}</h3>
