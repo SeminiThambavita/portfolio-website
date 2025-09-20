@@ -4,13 +4,13 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://your-portfolio-url.netlify.app) <!-- Update this with your actual URL -->
+[View Live Portfolio](https://aquamarine-custard-9514da.netlify.app)
 
 ## 🛠️ Technologies Used
 
 - **Frontend:** React.js, HTML5, CSS3, Tailwind CSS
 - **Icons:** Lucide React
-- **Deployment:** Netlify/Vercel
+- **Deployment:** Netlify
 - **Version Control:** Git & GitHub
 
 ## ✨ Features
