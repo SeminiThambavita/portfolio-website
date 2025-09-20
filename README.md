@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Semini Kaushalya Thambavita - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my skills, projects, and experience as an aspiring Full-Stack Developer.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[View Live Portfolio](https://your-portfolio-url.netlify.app) <!-- Update this with your actual URL -->
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js, HTML5, CSS3, Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Netlify/Vercel
+- **Version Control:** Git & GitHub
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🌙 **Dark/Light Mode Toggle**
+- 📱 **Fully Responsive Design**
+- 🎨 **Modern UI/UX with Animations**
+- 📧 **Contact Form**
+- 🔗 **Social Media Integration**
+- ⚡ **Fast Loading & Optimized**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📋 Sections
 
-### `npm run build`
+- **About Me** - Personal introduction and background
+- **Skills** - Technical skills and technologies
+- **Projects** - Featured projects with detailed descriptions
+- **Experience** - Professional work experience
+- **Certifications** - Technical certifications and achievements
+- **Contact** - Get in touch information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Key Projects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Yamu – Centralized Travel Application
+- Full-stack travel booking platform for Sri Lanka
+- Technologies: React.js, Spring Boot, MySQL, Azure AI
+- **My Role:** Itinerary builder (frontend & backend), Azure speech-to-text integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TenantFlow – Apartment Maintenance Application
+- Web-based maintenance management system
+- Technologies: React.js, Node.js, MongoDB, OpenAI GPT API, PayHere
+- **My Role:** Full-stack development, UI/UX, payment integration
+- **Status:** Ongoing Project
 
-### `npm run eject`
+## 🎓 Education
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**University of Moratuwa** (2023 - Present)
+- BSc (Hons) in Information Technology and Management
+- 3rd Year Undergraduate
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💼 Experience
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**GSK Partners** - Trainee Associate (Level I) - 2022
+- US-based Accounting and Tax Firm
+- Professional work environment experience
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏆 Certifications
 
-## Learn More
+- Sololearn Java Beginner & Intermediate
+- HackerRank Problem Solving
+- Introduction to Google's Generative AI
+- AWS Cloud Practitioner
+- Postman API Badge
+- Azure AZ-900 Fundamentals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SeminiThambavita/portfolio-website.git
+   cd portfolio-website
+   ```
 
-### Analyzing the Bundle Size
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Contact
 
-### Advanced Configuration
+- **Email:** thambavitasemini2002@gmail.com
+- **Phone:** +94 752339505
+- **LinkedIn:** [Semini Kaushalya Thambavita](http://linkedin.com/in/semini-kaushalya-thambavita-128b42237)
+- **GitHub:** [SeminiThambavita](https://github.com/SeminiThambavita)
+- **Location:** Panadura, Sri Lanka
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+Feel free to fork this project and submit pull requests for any improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+**Available for Internships** | **Open to New Opportunities**
+
+*Built with ❤️ by Semini Kaushalya Thambavita*
