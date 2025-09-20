@@ -303,7 +303,7 @@ const Projects = () => {
       name: "Yamu – Centralized Travel Application",
       description: "A full-stack web platform designed to unify travel booking in Sri Lanka by integrating accommodation, transport, and tour guide reservations within a single interface. The system leverages Microsoft Azure AI services to provide speech-to-text, language translation, image recognition, and personalized recommendations for travelers. Real-time booking management, notifications, and chat functionality connect travelers with local service providers, promoting sustainable tourism.",
       techStack: ["React.js", "Spring Boot", "RESTful APIs", "MySQL", "Tailwind CSS", "Microsoft Azure AI", "Web Sockets"],
-      image: "🌍",
+      image: "/yamulook.png",
       contribution: "Developed the itinerary builder (both frontend and backend) and integrated Azure speech-to-text functionality"
     },
     {
