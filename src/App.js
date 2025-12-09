@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Download, Mail, Github, Linkedin, ExternalLink, Menu, X, Code, Database, Cloud, Award, MapPin, Calendar, Server, Palette, Smartphone } from 'lucide-react';
+import { ChevronDown, Download, Mail, Github, Linkedin, ExternalLink, Menu, X, Code, Database, Cloud, Award, MapPin, Calendar, Server, Palette, Smartphone, GraduationCap } from 'lucide-react';
 
 // Theme context for dark/light mode
 const ThemeContext = React.createContext();
@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex space-x-8 items-center">
-            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
+            {['About', 'Education', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -69,7 +69,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className={`md:hidden ${isDark ? 'bg-gray-900/95' : 'bg-white/95'} backdrop-blur-md`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {['About', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
+            {['About', 'Education', 'Skills', 'Projects', 'Experience', 'Certifications', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -89,7 +89,7 @@ const Navbar = () => {
 const Hero = () => {
   const { isDark } = React.useContext(ThemeContext);
   const [textIndex, setTextIndex] = useState(0);
-  const roles = ["Aspiring Full-Stack Developer"];
+  const roles = ["Aspiring QA Engineer", "Manual & API Testing Enthusiast", "Quality Advocate in Training"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -131,14 +131,20 @@ const Hero = () => {
           </div>
           
           <p className={`text-lg sm:text-xl mb-8 max-w-2xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-            Third year undergraduate following BSc (Hons) in Information Technology and Management @ University of Moratuwa
+            Third-year undergraduate in BSc (Hons) Information Technology and Management @ University of Moratuwa, focusing on software quality assurance and testing.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+            <a
+              href="/Semini-Thambavita-CV.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+            >
               <Download className="mr-2" size={20} />
               Download CV
-            </button>
+            </a>
             <button 
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 font-semibold rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transform hover:scale-105 transition-all duration-200"
@@ -185,18 +191,13 @@ const About = () => {
           
           <div className="space-y-6">
             <p className={`leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              I'm a dedicated undergraduate following BSc (Hons) Information Technology and Management degree at the University of Moratuwa, 
-              Sri Lanka. With a strong foundation in full-stack development, I'm passionate about creating innovative software 
-              solutions that address real-world challenges.
+              I'm an aspiring QA Engineer with strong manual testing fundamentals and growing expertise in API testing using Postman. I enjoy building reliable test coverage and improving product quality through structured test design and clear defect reporting.
             </p>
             <p className={`leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              My expertise spans across modern web technologies including React.js, Node.js, Spring Boot, and cloud platforms like AWS and Azure. 
-              I have hands-on experience in both frontend and backend development, with a particular interest in building scalable applications 
-              and integrating AI services. I'm committed to continuous learning and staying updated with the latest technologies.
+              I am strengthening automation skills with Selenium and TestNG basics, and I apply Agile testing practices to collaborate with teams. My approach blends curiosity with attention to detail to uncover issues early and advocate for user-centric quality.
             </p>
             <p className={`leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              Based in Sri Lanka, I'm actively seeking internship opportunities to apply my technical skills in a professional 
-              environment and contribute to meaningful projects that drive digital transformation in Sri Lanka's tech industry.
+              Based in Panadura, Sri Lanka, I'm seeking a Quality Assurance internship to contribute to delivery-ready releases while expanding my expertise in modern testing tools and methodologies.
             </p>
             
             <div className="grid grid-cols-2 gap-4 pt-4">
@@ -206,10 +207,75 @@ const About = () => {
               </div>
               <div className={`flex items-center p-3 rounded-lg ${isDark ? 'bg-gray-700' : 'bg-blue-50'}`}>
                 <Calendar size={20} className="text-blue-500 mr-3" />
-                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>Available for Internships</span>
+                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>Available for QA Internships</span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Education Section Component
+const Education = () => {
+  const { isDark } = React.useContext(ThemeContext);
+
+  const education = [
+    {
+      title: "B.Sc. (Hons.) in Information Technology and Management",
+      place: "University of Moratuwa",
+      period: "2023 - Present",
+      details: [
+        "Coursework across software engineering, project management, and information systems.",
+        "Pursuing a QA-focused internship to apply academic learning in practice."
+      ]
+    },
+    {
+      title: "G.C.E. Advanced Level (English Medium)",
+      place: "Visakha Vidyalaya, Colombo 04",
+      period: "2019 - 2021",
+      details: [
+        "3 A's in G.C.E. A/L Examination.",
+        "Island Rank: 33 | Colombo District Rank: 18."
+      ]
+    },
+    {
+      title: "G.C.E. Ordinary Level (English Medium)",
+      place: "Leeds International School",
+      period: "2010 - 2018",
+      details: ["9 A's in G.C.E. O/L Examination."]
+    }
+  ];
+
+  return (
+    <section id="education" className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className={`text-3xl font-bold text-center mb-4 ${isDark ? 'text-white' : 'text-gray-800'}`}>Education</h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-12"></div>
+
+        <div className="space-y-6">
+          {education.map((edu, idx) => (
+            <div key={idx} className={`rounded-xl p-6 ${isDark ? 'bg-gray-800 shadow-lg' : 'bg-white shadow-md'}`}>
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className={`text-xl font-semibold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-800'}`}>
+                    <GraduationCap size={20} className="text-blue-500" />
+                    {edu.title}
+                  </h3>
+                  <p className="text-blue-500 font-medium">{edu.place}</p>
+                </div>
+                <span className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{edu.period}</span>
+              </div>
+              <ul className="mt-3 space-y-2 list-disc list-inside">
+                {edu.details.map((detail, detailIdx) => (
+                  <li key={detailIdx} className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -222,39 +288,39 @@ const Skills = () => {
   
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["Java", "JavaScript", "TypeScript", "C"],
-      icon: <Code className="text-blue-500" />
+      title: "Testing & QA",
+      skills: ["Manual Testing", "API Testing (Postman)", "Test Case Design", "Agile Testing", "Quality Assurance Practices", "Bug Reporting"],
+      icon: <Award className="text-red-500" />
     },
     {
-      title: "Frontend",
-      skills: ["React.js", "HTML", "Tailwind CSS", "Bootstrap"],
-      icon: <Palette className="text-green-500" />
-    },
-    {
-      title: "Mobile Development",
-      skills: ["React Native"],
-      icon: <Smartphone className="text-indigo-500" />
-    },
-    {
-      title: "Backend",
-      skills: ["Node.js", "Express.js", "REST APIs", "Spring Boot"],
-      icon: <Server className="text-purple-500" />
-    },
-    {
-      title: "Database",
-      skills: ["Firebase", "MongoDB", "MySQL"],
-      icon: <Database className="text-orange-500" />
-    },
-    {
-      title: "Cloud & Tools",
-      skills: ["AWS", "Azure", "Git"],
+      title: "Automation & Tools",
+      skills: ["Selenium (learning)", "TestNG basics", "Postman", "Git", "Jira", "Azure", "VS Code"],
       icon: <Cloud className="text-cyan-500" />
     },
     {
-      title: "Concepts",
-      skills: ["OOP", "Data Structures & Algorithms", "SOLID Principles", "SDLC", "System Design"],
-      icon: <Award className="text-red-500" />
+      title: "Programming",
+      skills: ["Java", "JavaScript", "TypeScript", "C", "HTML", "CSS"],
+      icon: <Code className="text-blue-500" />
+    },
+    {
+      title: "Web & Backend",
+      skills: ["React.js", "Angular (learning)", "Node.js", "Express.js", "RESTful APIs", "Spring Boot"],
+      icon: <Server className="text-purple-500" />
+    },
+    {
+      title: "Mobile Development",
+      skills: ["React Native", "Expo"],
+      icon: <Smartphone className="text-indigo-500" />
+    },
+    {
+      title: "Databases",
+      skills: ["MySQL", "MongoDB"],
+      icon: <Database className="text-orange-500" />
+    },
+    {
+      title: "Soft Skills",
+      skills: ["Analytical Thinking", "Attention to Detail", "Problem-Solving", "Communication", "Collaboration", "Adaptability", "Curiosity"],
+      icon: <Palette className="text-green-500" />
     }
   ];
 
@@ -301,17 +367,24 @@ const Projects = () => {
   const projects = [
     {
       name: "Yamu – Centralized Travel Application",
-      description: "A full-stack web platform designed to unify travel booking in Sri Lanka by integrating accommodation, transport, and tour guide reservations within a single interface. The system leverages Microsoft Azure AI services to provide speech-to-text, language translation, image recognition, and personalized recommendations for travelers. Real-time booking management, notifications, and chat functionality connect travelers with local service providers, promoting sustainable tourism.",
+      description: "Full-stack platform that unifies travel booking (accommodation, transport, tour guides) with real-time management and chat. Integrates Azure AI for speech-to-text, language translation, image recognition, and personalized traveler recommendations.",
       techStack: ["React.js", "Spring Boot", "RESTful APIs", "MySQL", "Tailwind CSS", "Microsoft Azure AI", "Web Sockets"],
       image: "/yamulook.png",
-      contribution: "Developed the itinerary builder (both frontend and backend) and integrated Azure speech-to-text functionality"
+      contribution: "Built the itinerary builder with map integration and implemented Azure AI speech-to-text."
     },
     {
-      name: "TenantFlow – Apartment Maintenance Facilitation Application",
-      description: "A centralized web-based application designed to streamline the reporting, tracking, resolution, and payment of maintenance-related issues in residential apartment complexes in Sri Lanka. Features include AI-powered incident categorization, secure payment processing, real-time notifications, and comprehensive reporting system. (Ongoing Project)",
-      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "OpenAI GPT API", "PayHere", "Socket.io"],
-      image: "/apartment.png",
-      contribution: "Full-stack development with focus on user interface, payment integration, and real-time communication features"
+      name: "RouteRider – Public Transportation Companion",
+      description: "Cross-platform mobile app to simplify public transport navigation with live schedules, route info, and personalized travel planning. Supports user authentication, favorites, advanced search, filtering, dark mode, and offline persistence.",
+      techStack: ["React Native", "Expo", "TypeScript", "Redux Toolkit", "React Navigation", "Formik & Yup", "AsyncStorage", "React Native Paper", "DummyJSON API"],
+      image: "🚌",
+      contribution: "Led full mobile app development including UX flows, state management, and API integration."
+    },
+    {
+      name: "TalentLink – Integrated ATS & LMS Platform",
+      description: "Enterprise-level prototype combining applicant tracking and learning management to streamline talent acquisition and employee upskilling with responsive UI and robust validation.",
+      techStack: ["Angular", "TypeScript", "Angular Material", "REST APIs", "Git"],
+      image: "🧭",
+      contribution: "Developed the home page and user registration module with responsive UI, form validation, and authentication."
     }
   ];
 
@@ -354,16 +427,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <button className={`flex items-center font-medium transition-colors duration-200 ${isDark ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-800'}`}>
-                    <Github className="mr-2" size={18} />
-                    View Code
-                  </button>
-                  <button className={`flex items-center font-medium transition-colors duration-200 ${isDark ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-800'}`}>
-                    <ExternalLink className="mr-2" size={18} />
-                    Live Demo
-                  </button>
-                </div>
+                <div className="flex gap-4"></div>
               </div>
             </div>
           ))}
@@ -380,10 +444,14 @@ const Experience = () => {
   const experiences = [
     {
       company: "GSK Partners",
-      position: "Trainee Associate (Level I)",
+      position: "Associate Trainee (Level 01)",
       period: "2022",
       location: "301 Galle Rd, Dehiwala – Mount Lavinia",
-      description: "US-based Accounting and Tax Firm - Gained valuable experience in professional work environment and business operations."
+      bullets: [
+        "Documented processes systematically for a US-based accounting and tax firm.",
+        "Collaborated in a team environment to meet strict deadlines.",
+        "Strengthened professional communication through client documentation and cross-functional coordination."
+      ]
     }
   ];
 
@@ -404,7 +472,13 @@ const Experience = () => {
                 </div>
                 <span className={`text-sm mt-2 md:mt-0 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>{exp.period}</span>
               </div>
-              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>{exp.description}</p>
+              <ul className="list-disc list-inside space-y-2">
+                {exp.bullets.map((item, bulletIdx) => (
+                  <li key={bulletIdx} className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -418,13 +492,13 @@ const Certifications = () => {
   const { isDark } = React.useContext(ThemeContext);
   
   const certifications = [
-    { name: "Sololearn Java Beginner", issuer: "Sololearn", icon: "☕" },
-    { name: "Sololearn Java Intermediate", issuer: "Sololearn", icon: "☕" },
-    { name: "HackerRank Problem Solving", issuer: "HackerRank", icon: "💻" },
-    { name: "Introduction to Google's Generative AI", issuer: "Google", icon: "🤖" },
-    { name: "AWS Cloud Practitioner", issuer: "Amazon", icon: "☁️" },
-    { name: "Postman API Badge", issuer: "Postman", icon: "📮" },
-    { name: "Azure AZ-900 Fundamentals", issuer: "Microsoft", icon: "⚡" }
+    { name: "CIMA Certificate Level", issuer: "Wisdom Business Academy, Colombo | 2019", icon: "📊" },
+    { name: "Postman API Fundamentals Student Expert", issuer: "Postman | 2025", icon: "📮" },
+    { name: "Introduction to Generative AI", issuer: "Google Cloud Skills Boost | Sep 2025 | ID: 18049125", icon: "🤖" },
+    { name: "Introduction to Large Language Models", issuer: "Google Cloud Skills Boost | Sep 2025 | ID: 18513005", icon: "🤖" },
+    { name: "Introduction to Programming Using Java", issuer: "Solo Learn | Sep 2025 | ID: CC-3OUNDALAI", icon: "☕" },
+    { name: "ISTQB Certified Tester – Foundation Level", issuer: "In Progress | Exam Preparation", icon: "🎯" },
+    { name: "SQL Course Certificate", issuer: "Solo Learn | Oct 2025", icon: "🗄️" }
   ];
 
   return (
@@ -570,6 +644,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
+        <Education />
         <Skills />
         <Projects />
         <Experience />

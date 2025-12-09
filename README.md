@@ -1,6 +1,6 @@
 # Semini Kaushalya Thambavita - Portfolio Website
 
-A modern, responsive portfolio website showcasing my skills, projects, and experience as an aspiring Full-Stack Developer.
+A modern, responsive portfolio website showcasing my skills, projects, and experience as an aspiring QA Engineer.
 
 ## 🚀 Live Demo
 
@@ -10,6 +10,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 - **Frontend:** React.js, HTML5, CSS3, Tailwind CSS
 - **Icons:** Lucide React
+- **Testing & QA:** Postman, Selenium (learning), TestNG basics, Jira
 - **Deployment:** Netlify
 - **Version Control:** Git & GitHub
 
@@ -18,17 +19,19 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - 🌙 **Dark/Light Mode Toggle**
 - 📱 **Fully Responsive Design**
 - 🎨 **Modern UI/UX with Animations**
+- 🧪 **QA-Focused Skills & Certifications**
 - 📧 **Contact Form**
 - 🔗 **Social Media Integration**
 - ⚡ **Fast Loading & Optimized**
 
 ## 📋 Sections
 
-- **About Me** - Personal introduction and background
-- **Skills** - Technical skills and technologies
-- **Projects** - Featured projects with detailed descriptions
+- **About Me** - QA-focused introduction and background
+- **Education** - University program and school achievements
+- **Skills** - Testing, QA, automation, programming, soft skills
+- **Projects** - Featured projects with detailed descriptions and contributions
 - **Experience** - Professional work experience
-- **Certifications** - Technical certifications and achievements
+- **Certifications** - QA and related certifications
 - **Contact** - Get in touch information
 
 ## 🎯 Key Projects
@@ -36,34 +39,46 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ### Yamu – Centralized Travel Application
 - Full-stack travel booking platform for Sri Lanka
 - Technologies: React.js, Spring Boot, MySQL, Azure AI
-- **My Role:** Itinerary builder (frontend & backend), Azure speech-to-text integration
+- **My Role:** Itinerary builder with map integration; Azure speech-to-text
 
-### TenantFlow – Apartment Maintenance Application
-- Web-based maintenance management system
-- Technologies: React.js, Node.js, MongoDB, OpenAI GPT API, PayHere
-- **My Role:** Full-stack development, UI/UX, payment integration
-- **Status:** Ongoing Project
+### RouteRider – Public Transportation Companion
+- Cross-platform mobile app for public transport navigation
+- Technologies: React Native, Expo, TypeScript, Redux Toolkit, AsyncStorage
+- **My Role:** Full mobile app development, UX flows, state management, API integration
+
+### TalentLink – Integrated ATS & LMS Platform
+- Enterprise prototype for applicant tracking and learning management
+- Technologies: Angular, TypeScript, Angular Material, REST APIs, Git
+- **My Role:** Homepage and user registration with responsive UI, validation, authentication
 
 ## 🎓 Education
 
-**University of Moratuwa** (2023 - Present)
-- BSc (Hons) in Information Technology and Management
-- 3rd Year Undergraduate
+**B.Sc. (Hons.) in Information Technology and Management** — University of Moratuwa (2023 - Present)  
+- Coursework across software engineering, project management, and information systems  
+- Seeking QA internship to apply academic learning
+
+**G.C.E. Advanced Level (English Medium)** — Visakha Vidyalaya, Colombo 04 (2019 - 2021)  
+- 3 A's; Island Rank 33; Colombo District Rank 18
+
+**G.C.E. Ordinary Level (English Medium)** — Leeds International School (2010 - 2018)  
+- 9 A's
 
 ## 💼 Experience
 
-**GSK Partners** - Trainee Associate (Level I) - 2022
-- US-based Accounting and Tax Firm
-- Professional work environment experience
+**GSK Partners** — Associate Trainee (Level 01) — 2022  
+- Documented processes for a US-based accounting and tax firm  
+- Collaborated in teams to meet strict deadlines  
+- Improved communication through client documentation and cross-functional coordination
 
 ## 🏆 Certifications
 
-- Sololearn Java Beginner & Intermediate
-- HackerRank Problem Solving
-- Introduction to Google's Generative AI
-- AWS Cloud Practitioner
-- Postman API Badge
-- Azure AZ-900 Fundamentals
+- CIMA Certificate Level — Wisdom Business Academy, Colombo | 2019
+- Postman API Fundamentals Student Expert — Postman | 2025
+- Introduction to Generative AI — Google Cloud Skills Boost | Sep 2025 | ID: 18049125
+- Introduction to Large Language Models — Google Cloud Skills Boost | Sep 2025 | ID: 18513005
+- Introduction to Programming Using Java — Solo Learn | Sep 2025 | ID: CC-3OUNDALAI
+- ISTQB Certified Tester – Foundation Level — In Progress | Exam Preparation
+- SQL Course Certificate — Solo Learn | Oct 2025
 
 ## 🚀 Getting Started
 
